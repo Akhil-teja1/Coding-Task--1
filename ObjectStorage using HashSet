@@ -1,0 +1,33 @@
+import java.util.*;
+public class ObjectStorage 
+{
+    public static void main(String[] args) 
+    {
+        HashSet<Integer> hashset = new HashSet<>();
+        hashset.add(1);
+        hashset.add(2);
+        hashset.add(3);
+        hashset.add(4);
+        hashset.add(5);
+        hashset.add(6);
+        System.out.println("Insertion of Elements ");
+        System.out.println("HashSet : " + hashset);
+       /*
+       Iterator<Integer> iterate = numbers.iterator();
+       System.out.print("HashSet using Iterator: ");
+       // Accessing elements
+        while(iterate.hasNext()) 
+        {
+            System.out.print(iterate.next());
+            System.out.print(", ");  
+        }
+        */
+        System.out.print("HashSet Using for-Each : ");
+            for(Integer numbers:hashset)
+            {
+                System.out.print(numbers);
+                System.out.print(",");
+            }
+        
+    }
+}
